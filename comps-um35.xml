@@ -48,11 +48,8 @@
       <packagereq type="default">dracut-config-rescue</packagereq>
       <packagereq type="default">ultramarine-repos</packagereq>
       <packagereq type="default">firewalld</packagereq>
-      <packagereq arch="ppc64le" type="default">lsvpd</packagereq>
       <packagereq type="default">NetworkManager</packagereq>
       <packagereq type="default">plymouth</packagereq>
-      <packagereq arch="ppc64le" type="default">powerpc-utils</packagereq>
-      <packagereq arch="s390x" type="default">s390utils-base</packagereq>
       <packagereq type="default">systemd-oomd-defaults</packagereq>
       <packagereq type="default">systemd-resolved</packagereq>
       <packagereq type="default">zram-generator-defaults</packagereq>
@@ -169,19 +166,16 @@
       <packagereq type="default">avahi</packagereq>
       <packagereq type="default">baobab</packagereq>
       <packagereq type="default">cheese</packagereq>
-      <packagereq type="default">chrome-gnome-shell</packagereq>
       <packagereq type="default">eog</packagereq>
       <packagereq type="default">evince</packagereq>
       <packagereq type="default">evince-djvu</packagereq>
       <packagereq type="default">evince-nautilus</packagereq>
       <packagereq type="default">fprintd-pam</packagereq>
       <packagereq type="default">glib-networking</packagereq>
-      <packagereq type="default">gnome-backgrounds</packagereq>
       <packagereq type="default">gnome-bluetooth</packagereq>
       <packagereq type="default">gnome-calculator</packagereq>
       <packagereq type="default">gnome-calendar</packagereq>
       <packagereq type="default">gnome-characters</packagereq>
-      <packagereq type="default">gnome-classic-session</packagereq>
       <packagereq type="default">gnome-clocks</packagereq>
       <packagereq type="default">gnome-color-manager</packagereq>
       <packagereq type="default">gnome-contacts</packagereq>
@@ -317,6 +311,34 @@
       <packagereq type="mandatory">words</packagereq>
       <packagereq type="mandatory">zip</packagereq>
       <packagereq type="conditional" requires="gnome-control-center">chrony</packagereq>
+    </packagelist>
+  </group>
+  <group>
+    <id>cutefish-desktop</id>
+    <name>Cutefish Desktop</name>
+    <description>Cutefish desktop is a desktop environment focused on simplicity and praciticality.</description>
+    <default>false</default>
+    <uservisible>true</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">cutefish-desktop</packagereq>
+      <packagereq type="mandatory">cutefish-desktop-common</packagereq>
+      <packagereq type="mandatory">cutefish-videoplayer</packagereq>
+      <packagereq type="mandatory">abrt</packagereq>
+      <packagereq type="mandatory">cutefish-filemanager</packagereq>
+      <packagereq type="mandatory">ultramarine-backgrounds</packagereq>
+      <packagereq type="mandatory">sddm</packagereq>
+      <packagereq type="mandatory">cutefish-icons</packagereq>
+      <packagereq type="mandatory">cutefish-kwin-plugins</packagereq>
+      <packagereq type="mandatory">cutefish-qt-plugins</packagereq>
+      <packagereq type="mandatory">cutefish-screenlocker</packagereq>
+      <packagereq type="mandatory">cutefish-settings</packagereq>
+      <packagereq type="mandatory">cutefish-statusbar</packagereq>
+      <packagereq type="mandatory">cutefish-terminal</packagereq>
+      <packagereq type="default">cutefish-videoplayer</packagereq>
+      <packagereq type="default">kate</packagereq>
+      <packagereq type="default">sddm-theme-cutefish</packagereq>
+      <packagereq type="default">cutefish-dock</packagereq>
+      <packagereq type="mandatory">kwin</packagereq>
     </packagelist>
   </group>
 </comps>
