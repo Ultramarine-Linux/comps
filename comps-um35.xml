@@ -56,9 +56,6 @@
       <packagereq type="optional">dracut-config-generic</packagereq>
       <packagereq type="optional">initial-setup</packagereq>
       <packagereq type="optional">initscripts</packagereq>
-      <packagereq arch="armhfp" type="optional">uboot-images-armv7</packagereq>
-      <packagereq arch="aarch64" type="optional">uboot-images-armv8</packagereq>
-      <packagereq arch="armhfp,aarch64" type="optional">uboot-tools</packagereq>
     </packagelist>
   </group>
   <group>
@@ -328,8 +325,6 @@
       <packagereq type="mandatory">ultramarine-backgrounds</packagereq>
       <packagereq type="mandatory">sddm</packagereq>
       <packagereq type="mandatory">cutefish-icons</packagereq>
-      <packagereq type="mandatory">cutefish-kwin-plugins</packagereq>
-      <packagereq type="mandatory">cutefish-qt-plugins</packagereq>
       <packagereq type="mandatory">cutefish-screenlocker</packagereq>
       <packagereq type="mandatory">cutefish-settings</packagereq>
       <packagereq type="mandatory">cutefish-statusbar</packagereq>
@@ -341,4 +336,86 @@
       <packagereq type="mandatory">kwin</packagereq>
     </packagelist>
   </group>
+  <environment>
+    <id>custom-environment</id>
+    <name>Fedora Custom Operating System</name>
+    <description>Basic building block for a custom Fedora system.</description>
+    <display_order>1</display_order>
+    <grouplist>
+      <groupid>core</groupid>
+    </grouplist>
+    <optionlist>
+      <groupid>standard</groupid>
+      <groupid>guest-agents</groupid>
+      <groupid>networkmanager-submodules</groupid>
+    </optionlist>
+  </environment>
+  <environment>
+    <id>minimal-environment</id>
+    <name>Minimal Install</name>
+    <description>Basic functionality.</description>
+    <display_order>1</display_order>
+    <grouplist>
+      <groupid>core</groupid>
+    </grouplist>
+    <optionlist>
+      <groupid>standard</groupid>
+      <groupid>guest-agents</groupid>
+      <groupid>networkmanager-submodules</groupid>
+    </optionlist>
+  </environment>
+  <category>
+    <id>budgie-desktop-environment</id>
+    <name>Budgie Desktop</name>
+    <description>Budgie is a desktop environment designed to keep out the way of the user.</description>
+    <display_order>5</display_order>
+    <grouplist>
+      <groupid>firefox</groupid>
+      <groupid>gnome-desktop</groupid>
+      <groupid>libreoffice</groupid>
+    </grouplist>
+  </category>
+  <category>
+    <id>base-system</id>
+    <name>Base System</name>
+    <description>Various core pieces of the system.</description>
+    <display_order>99</display_order>
+    <grouplist>
+      <groupid>admin-tools</groupid>
+      <groupid>dial-up</groupid>
+      <groupid>fonts</groupid>
+      <groupid>hardware-support</groupid>
+      <groupid>input-methods</groupid>
+      <groupid>java</groupid>
+      <groupid>legacy-fonts</groupid>
+      <groupid>networkmanager-submodules</groupid>
+      <groupid>standard</groupid>
+      <groupid>system-tools</groupid>
+      <groupid>virtualization</groupid>
+    </grouplist>
+  </category>
+  <environment>
+    <id>flagship-product-environment</id>
+    <name>Ultramarine Flagship</name>
+    <description>Ultramarine Flagship is the flagship Ultramarine experience.</description>
+    <display_order>2</display_order>
+    <grouplist>
+      <groupid>base-x</groupid>
+      <groupid>container-management</groupid>
+      <groupid>core</groupid>
+      <groupid>firefox</groupid>
+      <groupid>fonts</groupid>
+      <groupid>budgie-desktop</groupid>
+      <groupid>guest-desktop-agents</groupid>
+      <groupid>hardware-support</groupid>
+      <groupid>libreoffice</groupid>
+      <groupid>multimedia</groupid>
+      <groupid>networkmanager-submodules</groupid>
+      <groupid>printing</groupid>
+    </grouplist>
+    <optionlist>
+      <groupid>arm-tools</groupid>
+    </optionlist>
+  </environment>
+
 </comps>
