@@ -2,6 +2,64 @@
 <!DOCTYPE comps PUBLIC "-//Red Hat, Inc.//DTD Comps info//EN" "comps.dtd">
 <comps>
   <group>
+    <id>anaconda-tools</id>
+    <name>Anaconda tools</name>
+    <description/>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">authselect</packagereq>
+      <packagereq type="mandatory">authselect-compat</packagereq>
+      <packagereq type="mandatory">btrfs-progs</packagereq>
+      <packagereq type="mandatory">chrony</packagereq>
+      <packagereq type="mandatory">cryptsetup</packagereq>
+      <packagereq type="mandatory">device-mapper-multipath</packagereq>
+      <packagereq type="mandatory">dmraid</packagereq>
+      <packagereq type="mandatory">dosfstools</packagereq>
+      <packagereq type="mandatory">dracut-network</packagereq>
+      <packagereq type="mandatory">e2fsprogs</packagereq>
+      <packagereq arch="aarch64,armhfp,x86_64" type="mandatory">efibootmgr</packagereq>
+      <packagereq type="mandatory">exfatprogs</packagereq>
+      <packagereq arch="aarch64,armhfp" type="mandatory">extlinux-bootloader</packagereq>
+      <packagereq type="mandatory">fcoe-utils</packagereq>
+      <packagereq type="mandatory">firewalld</packagereq>
+      <packagereq type="mandatory">gfs2-utils</packagereq>
+      <packagereq type="mandatory">glibc-all-langpacks</packagereq>
+      <packagereq arch="aarch64" type="mandatory">grub2-efi-aa64</packagereq>
+      <packagereq arch="aarch64" type="mandatory">grub2-efi-aa64-cdboot</packagereq>
+      <packagereq arch="armhfp" type="mandatory">grub2-efi-arm</packagereq>
+      <packagereq arch="armhfp" type="mandatory">grub2-efi-arm-cdboot</packagereq>
+      <packagereq arch="x86_64" type="mandatory">grub2-efi-ia32</packagereq>
+      <packagereq arch="x86_64" type="mandatory">grub2-efi-ia32-cdboot</packagereq>
+      <packagereq arch="x86_64" type="mandatory">grub2-efi-x64</packagereq>
+      <packagereq arch="x86_64" type="mandatory">grub2-efi-x64-cdboot</packagereq>
+      <packagereq arch="x86_64" type="mandatory">grub2-pc</packagereq>
+      <packagereq arch="ppc64" type="mandatory">grub2-ppc64</packagereq>
+      <packagereq arch="ppc64le" type="mandatory">grub2-ppc64le</packagereq>
+      <packagereq arch="aarch64,armhfp,ppc64,ppc64le,x86_64" type="mandatory">grub2-tools</packagereq>
+      <packagereq arch="x86_64" type="mandatory">grub2-tools-efi</packagereq>
+      <packagereq arch="aarch64,armhfp,ppc64,ppc64le,x86_64" type="mandatory">grub2-tools-extra</packagereq>
+      <packagereq type="mandatory">hfsplus-tools</packagereq>
+      <packagereq type="mandatory">iscsi-initiator-utils</packagereq>
+      <packagereq type="mandatory">kbd-legacy</packagereq>
+      <packagereq type="mandatory">kdump-anaconda-addon</packagereq>
+      <packagereq type="mandatory">lvm2</packagereq>
+      <packagereq arch="x86_64" type="mandatory">mactel-boot</packagereq>
+      <packagereq type="mandatory">mdadm</packagereq>
+      <packagereq type="mandatory">ntfsprogs</packagereq>
+      <packagereq type="mandatory">realmd</packagereq>
+      <packagereq type="mandatory">reiserfs-utils</packagereq>
+      <packagereq arch="s390x" type="mandatory">s390utils</packagereq>
+      <packagereq arch="s390x" type="mandatory">s390utils-base</packagereq>
+      <packagereq arch="aarch64" type="mandatory">shim-aa64</packagereq>
+      <packagereq arch="x86_64" type="mandatory">shim-ia32</packagereq>
+      <packagereq arch="x86_64" type="mandatory">shim-x64</packagereq>
+      <packagereq arch="x86_64" type="mandatory">syslinux-extlinux</packagereq>
+      <packagereq type="mandatory">teamd</packagereq>
+      <packagereq type="mandatory">xfsprogs</packagereq>
+    </packagelist>
+  </group>
+  <group>
     <id>audio</id>
     <name>Audio Production</name>
     <description>Various tools for audio synthesis and music production.</description>
@@ -115,64 +173,6 @@
     </packagelist>
   </group>
   <group>
-    <id>anaconda-tools</id>
-    <name>Anaconda tools</name>
-    <description/>
-    <default>false</default>
-    <uservisible>false</uservisible>
-    <packagelist>
-      <packagereq type="mandatory">authselect</packagereq>
-      <packagereq type="mandatory">authselect-compat</packagereq>
-      <packagereq type="mandatory">btrfs-progs</packagereq>
-      <packagereq type="mandatory">chrony</packagereq>
-      <packagereq type="mandatory">cryptsetup</packagereq>
-      <packagereq type="mandatory">device-mapper-multipath</packagereq>
-      <packagereq type="mandatory">dmraid</packagereq>
-      <packagereq type="mandatory">dosfstools</packagereq>
-      <packagereq type="mandatory">dracut-network</packagereq>
-      <packagereq type="mandatory">e2fsprogs</packagereq>
-      <packagereq arch="aarch64,armhfp,x86_64" type="mandatory">efibootmgr</packagereq>
-      <packagereq type="mandatory">exfatprogs</packagereq>
-      <packagereq arch="aarch64,armhfp" type="mandatory">extlinux-bootloader</packagereq>
-      <packagereq type="mandatory">fcoe-utils</packagereq>
-      <packagereq type="mandatory">firewalld</packagereq>
-      <packagereq type="mandatory">gfs2-utils</packagereq>
-      <packagereq type="mandatory">glibc-all-langpacks</packagereq>
-      <packagereq arch="aarch64" type="mandatory">grub2-efi-aa64</packagereq>
-      <packagereq arch="aarch64" type="mandatory">grub2-efi-aa64-cdboot</packagereq>
-      <packagereq arch="armhfp" type="mandatory">grub2-efi-arm</packagereq>
-      <packagereq arch="armhfp" type="mandatory">grub2-efi-arm-cdboot</packagereq>
-      <packagereq arch="x86_64" type="mandatory">grub2-efi-ia32</packagereq>
-      <packagereq arch="x86_64" type="mandatory">grub2-efi-ia32-cdboot</packagereq>
-      <packagereq arch="x86_64" type="mandatory">grub2-efi-x64</packagereq>
-      <packagereq arch="x86_64" type="mandatory">grub2-efi-x64-cdboot</packagereq>
-      <packagereq arch="x86_64" type="mandatory">grub2-pc</packagereq>
-      <packagereq arch="ppc64" type="mandatory">grub2-ppc64</packagereq>
-      <packagereq arch="ppc64le" type="mandatory">grub2-ppc64le</packagereq>
-      <packagereq arch="aarch64,armhfp,ppc64,ppc64le,x86_64" type="mandatory">grub2-tools</packagereq>
-      <packagereq arch="x86_64" type="mandatory">grub2-tools-efi</packagereq>
-      <packagereq arch="aarch64,armhfp,ppc64,ppc64le,x86_64" type="mandatory">grub2-tools-extra</packagereq>
-      <packagereq type="mandatory">hfsplus-tools</packagereq>
-      <packagereq type="mandatory">iscsi-initiator-utils</packagereq>
-      <packagereq type="mandatory">kbd-legacy</packagereq>
-      <packagereq type="mandatory">kdump-anaconda-addon</packagereq>
-      <packagereq type="mandatory">lvm2</packagereq>
-      <packagereq arch="x86_64" type="mandatory">mactel-boot</packagereq>
-      <packagereq type="mandatory">mdadm</packagereq>
-      <packagereq type="mandatory">ntfsprogs</packagereq>
-      <packagereq type="mandatory">realmd</packagereq>
-      <packagereq type="mandatory">reiserfs-utils</packagereq>
-      <packagereq arch="s390x" type="mandatory">s390utils</packagereq>
-      <packagereq arch="s390x" type="mandatory">s390utils-base</packagereq>
-      <packagereq arch="aarch64" type="mandatory">shim-aa64</packagereq>
-      <packagereq arch="x86_64" type="mandatory">shim-ia32</packagereq>
-      <packagereq arch="x86_64" type="mandatory">shim-x64</packagereq>
-      <packagereq arch="x86_64" type="mandatory">syslinux-extlinux</packagereq>
-      <packagereq type="mandatory">teamd</packagereq>
-      <packagereq type="mandatory">xfsprogs</packagereq>
-    </packagelist>
-  </group>
-  <group>
     <id>base-x</id>
     <name>base-x</name>
     <description>Local X.org display server</description>
@@ -209,17 +209,142 @@
     <default>false</default>
     <uservisible>false</uservisible>
     <packagelist>
-      <packagereq type='optional'>adwaita-gtk2-theme</packagereq>
-      <packagereq type='optional'>adwaita-icon-theme</packagereq>
-      <packagereq type='optional'>awesome</packagereq>
-      <packagereq type='optional'>i3</packagereq>
-      <packagereq type='optional'>initial-setup-gui</packagereq>
-      <packagereq type='optional'>lightdm-gtk</packagereq>
-      <packagereq type='optional'>metacity</packagereq>
-      <packagereq type='optional'>openbox</packagereq>
-      <packagereq type='optional'>qtile</packagereq>
-      <packagereq type='optional'>ratpoison</packagereq>
-      <packagereq type='optional'>xmonad-basic</packagereq>
+      <packagereq type="optional">adwaita-gtk2-theme</packagereq>
+      <packagereq type="optional">adwaita-icon-theme</packagereq>
+      <packagereq type="optional">awesome</packagereq>
+      <packagereq type="optional">i3</packagereq>
+      <packagereq type="optional">initial-setup-gui</packagereq>
+      <packagereq type="optional">lightdm-gtk</packagereq>
+      <packagereq type="optional">metacity</packagereq>
+      <packagereq type="optional">openbox</packagereq>
+      <packagereq type="optional">qtile</packagereq>
+      <packagereq type="optional">ratpoison</packagereq>
+      <packagereq type="optional">xmonad-basic</packagereq>
+    </packagelist>
+  </group>
+  <group>
+    <id>budgie-desktop</id>
+    <name>Budgie Desktop</name>
+    <description>Budgie is a desktop environment designed to keep out the way of the user.</description>
+    <default>false</default>
+    <uservisible>true</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">budgie-desktop</packagereq>
+      <packagereq type="mandatory">budgie-desktop=view</packagereq>
+      <packagereq type="mandatory">budgie-extras</packagereq>
+      <packagereq type="mandatory">budgie-extras-daemon</packagereq>
+      <packagereq type="mandatory">dconf</packagereq>
+      <packagereq type="mandatory">gdm</packagereq>
+      <packagereq type="mandatory">gedit</packagereq>
+      <packagereq type="mandatory">gnome-boxes</packagereq>
+      <packagereq type="mandatory">gnome-connections</packagereq>
+      <packagereq type="mandatory">gnome-control-center</packagereq>
+      <packagereq type="mandatory">gnome-settings-daemon</packagereq>
+      <packagereq type="mandatory">gnome-software</packagereq>
+      <packagereq type="mandatory">gnome-terminal</packagereq>
+      <packagereq type="mandatory">nautilus</packagereq>
+      <packagereq type="mandatory">polkit</packagereq>
+      <packagereq type="mandatory">yelp</packagereq>
+      <packagereq type="default">adobe-source-code-pro-fonts</packagereq>
+      <packagereq type="default">at-spi2-atk</packagereq>
+      <packagereq type="default">at-spi2-core</packagereq>
+      <packagereq type="default">avahi</packagereq>
+      <packagereq type="default">baobab</packagereq>
+      <packagereq type="default">cheese</packagereq>
+      <packagereq type="default">eog</packagereq>
+      <packagereq type="default">evince</packagereq>
+      <packagereq type="default">evince-djvu</packagereq>
+      <packagereq type="default">evince-nautilus</packagereq>
+      <packagereq type="default">fprintd-pam</packagereq>
+      <packagereq type="default">glib-networking</packagereq>
+      <packagereq type="default">gnome-bluetooth</packagereq>
+      <packagereq type="default">gnome-calculator</packagereq>
+      <packagereq type="default">gnome-calendar</packagereq>
+      <packagereq type="default">gnome-characters</packagereq>
+      <packagereq type="default">gnome-clocks</packagereq>
+      <packagereq type="default">gnome-color-manager</packagereq>
+      <packagereq type="default">gnome-contacts</packagereq>
+      <packagereq type="default">gnome-disk-utility</packagereq>
+      <packagereq type="default">gnome-font-viewer</packagereq>
+      <packagereq type="default">gnome-logs</packagereq>
+      <packagereq type="default">gnome-maps</packagereq>
+      <packagereq type="default">gnome-photos</packagereq>
+      <packagereq type="default">gnome-remote-desktop</packagereq>
+      <packagereq type="default">gnome-screenshot</packagereq>
+      <packagereq type="default">gnome-system-monitor</packagereq>
+      <packagereq type="default">gnome-terminal-nautilus</packagereq>
+      <packagereq type="default">gnome-themes-extra</packagereq>
+      <packagereq type="default">gnome-user-docs</packagereq>
+      <packagereq type="default">gnome-user-share</packagereq>
+      <packagereq type="default">gnome-weather</packagereq>
+      <packagereq type="default">gvfs-afc</packagereq>
+      <packagereq type="default">gvfs-afp</packagereq>
+      <packagereq type="default">gvfs-archive</packagereq>
+      <packagereq type="default">gvfs-fuse</packagereq>
+      <packagereq type="default">gvfs-goa</packagereq>
+      <packagereq type="default">gvfs-gphoto2</packagereq>
+      <packagereq type="default">gvfs-mtp</packagereq>
+      <packagereq type="default">gvfs-smb</packagereq>
+      <packagereq type="default">libcanberra-gtk3</packagereq>
+      <packagereq type="default">libproxy-webkitgtk4</packagereq>
+      <packagereq type="default">librsvg2</packagereq>
+      <packagereq type="default">libsane-hpaio</packagereq>
+      <packagereq type="default">mesa-dri-drivers</packagereq>
+      <packagereq type="default">mesa-libEGL</packagereq>
+      <packagereq type="default">ModemManager</packagereq>
+      <packagereq type="default">NetworkManager-adsl</packagereq>
+      <packagereq type="default">NetworkManager-openconnect-gnome</packagereq>
+      <packagereq type="default">NetworkManager-openvpn-gnome</packagereq>
+      <packagereq type="default">NetworkManager-ppp</packagereq>
+      <packagereq type="default">NetworkManager-pptp-gnome</packagereq>
+      <packagereq type="default">NetworkManager-ssh-gnome</packagereq>
+      <packagereq type="default">NetworkManager-vpnc-gnome</packagereq>
+      <packagereq type="default">NetworkManager-wwan</packagereq>
+      <packagereq type="default">orca</packagereq>
+      <packagereq type="default">PackageKit-command-not-found</packagereq>
+      <packagereq type="default">PackageKit-gtk3-module</packagereq>
+      <packagereq type="default">rygel</packagereq>
+      <packagereq type="default">sane-backends-drivers-scanners</packagereq>
+      <packagereq type="default">simple-scan</packagereq>
+      <packagereq type="default">sushi</packagereq>
+      <packagereq type="default">totem</packagereq>
+      <packagereq type="default">tracker</packagereq>
+      <packagereq type="default">tracker-miners</packagereq>
+      <packagereq type="default">xdg-desktop-portal</packagereq>
+      <packagereq type="default">xdg-desktop-portal-gnome</packagereq>
+      <packagereq type="default">xdg-desktop-portal-gtk</packagereq>
+      <packagereq type="default">xdg-user-dirs-gtk</packagereq>
+    </packagelist>
+  </group>
+  <group>
+    <id>buildsys-build</id>
+    <name>Buildsystem building group</name>
+    <description/>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">bash</packagereq>
+      <packagereq type="mandatory">bzip2</packagereq>
+      <packagereq type="mandatory">coreutils</packagereq>
+      <packagereq type="mandatory">cpio</packagereq>
+      <packagereq type="mandatory">diffutils</packagereq>
+      <packagereq type="mandatory">findutils</packagereq>
+      <packagereq type="mandatory">gawk</packagereq>
+      <packagereq type="mandatory">glibc-minimal-langpack</packagereq>
+      <packagereq type="mandatory">grep</packagereq>
+      <packagereq type="mandatory">gzip</packagereq>
+      <packagereq type="mandatory">info</packagereq>
+      <packagereq type="mandatory">patch</packagereq>
+      <packagereq type="mandatory">redhat-rpm-config</packagereq>
+      <packagereq type="mandatory">rpm-build</packagereq>
+      <packagereq type="mandatory">sed</packagereq>
+      <packagereq type="mandatory">shadow-utils</packagereq>
+      <packagereq type="mandatory">tar</packagereq>
+      <packagereq type="mandatory">ultramarine-release-common</packagereq>
+      <packagereq type="mandatory">unzip</packagereq>
+      <packagereq type="mandatory">util-linux</packagereq>
+      <packagereq type="mandatory">which</packagereq>
+      <packagereq type="mandatory">xz</packagereq>
     </packagelist>
   </group>
   <group>
@@ -297,6 +422,63 @@
     </packagelist>
   </group>
   <group>
+    <id>core</id>
+    <name>Core</name>
+    <description>Smallest possible installation</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">audit</packagereq>
+      <packagereq type="mandatory">basesystem</packagereq>
+      <packagereq type="mandatory">bash</packagereq>
+      <packagereq type="mandatory">coreutils</packagereq>
+      <packagereq type="mandatory">curl</packagereq>
+      <packagereq type="mandatory">dhcp-client</packagereq>
+      <packagereq type="mandatory">dnf</packagereq>
+      <packagereq type="mandatory">e2fsprogs</packagereq>
+      <packagereq type="mandatory">filesystem</packagereq>
+      <packagereq type="mandatory">glibc</packagereq>
+      <packagereq type="mandatory">grubby</packagereq>
+      <packagereq type="mandatory">hostname</packagereq>
+      <packagereq type="mandatory">iproute</packagereq>
+      <packagereq type="mandatory">iputils</packagereq>
+      <packagereq type="mandatory">kbd</packagereq>
+      <packagereq type="mandatory">less</packagereq>
+      <packagereq type="mandatory">man-db</packagereq>
+      <packagereq type="mandatory">ncurses</packagereq>
+      <packagereq type="mandatory">openssh-clients</packagereq>
+      <packagereq type="mandatory">openssh-server</packagereq>
+      <packagereq type="mandatory">parted</packagereq>
+      <packagereq type="mandatory">passwd</packagereq>
+      <packagereq type="mandatory">policycoreutils</packagereq>
+      <packagereq type="mandatory">procps-ng</packagereq>
+      <packagereq type="mandatory">rootfiles</packagereq>
+      <packagereq type="mandatory">rpm</packagereq>
+      <packagereq type="mandatory">selinux-policy-targeted</packagereq>
+      <packagereq type="mandatory">setup</packagereq>
+      <packagereq type="mandatory">shadow-utils</packagereq>
+      <packagereq type="mandatory">sssd-common</packagereq>
+      <packagereq type="mandatory">sssd-kcm</packagereq>
+      <packagereq type="mandatory">sudo</packagereq>
+      <packagereq type="mandatory">systemd</packagereq>
+      <packagereq type="mandatory">util-linux</packagereq>
+      <packagereq type="mandatory">vim-minimal</packagereq>
+      <packagereq type="mandatory">yum</packagereq>
+      <packagereq type="default">dnf-plugins-core</packagereq>
+      <packagereq type="default">dracut-config-rescue</packagereq>
+      <packagereq type="default">firewalld</packagereq>
+      <packagereq type="default">NetworkManager</packagereq>
+      <packagereq type="default">plymouth</packagereq>
+      <packagereq type="default">systemd-oomd-defaults</packagereq>
+      <packagereq type="default">systemd-resolved</packagereq>
+      <packagereq type="default">ultramarine-repos</packagereq>
+      <packagereq type="default">zram-generator-defaults</packagereq>
+      <packagereq type="optional">dracut-config-generic</packagereq>
+      <packagereq type="optional">initial-setup</packagereq>
+      <packagereq type="optional">initscripts</packagereq>
+    </packagelist>
+  </group>
+  <group>
     <id>critical-path-apps</id>
     <name>Critical Path (Applications)</name>
     <description>A set of applications that are considered critical path</description>
@@ -334,6 +516,40 @@
       <packagereq type="mandatory">rpm-build</packagereq>
       <packagereq type="mandatory">selinux-policy</packagereq>
       <packagereq type="mandatory">setup</packagereq>
+    </packagelist>
+  </group>
+  <group>
+    <id>critical-path-budgie</id>
+    <name>Critical Path (Budgie)</name>
+    <description>A set of packages that provide the Critical Path functionality for the Budgie desktop</description>
+    <default>false</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">dconf</packagereq>
+      <packagereq type="mandatory">gdm</packagereq>
+      <packagereq type="mandatory">gnome-control-center</packagereq>
+      <packagereq type="mandatory">gnome-session-xsession</packagereq>
+      <packagereq type="mandatory">gnome-shell</packagereq>
+      <packagereq type="mandatory">gnome-terminal</packagereq>
+      <packagereq type="mandatory">gnome-themes-extra</packagereq>
+      <packagereq type="mandatory">gvfs-fuse</packagereq>
+      <packagereq type="mandatory">xorg-x11-drv-amdgpu</packagereq>
+      <packagereq type="mandatory">xorg-x11-drv-ati</packagereq>
+      <packagereq type="mandatory">xorg-x11-drv-evdev</packagereq>
+      <packagereq type="mandatory">xorg-x11-drv-fbdev</packagereq>
+      <packagereq type="mandatory">xorg-x11-drv-intel</packagereq>
+      <packagereq type="mandatory">xorg-x11-drv-libinput</packagereq>
+      <packagereq type="mandatory">xorg-x11-drv-nouveau</packagereq>
+      <packagereq type="mandatory">xorg-x11-drv-qxl</packagereq>
+      <packagereq type="mandatory">xorg-x11-drv-vesa</packagereq>
+      <packagereq type="mandatory">xorg-x11-server-Xorg</packagereq>
+      <packagereq type="mandatory">xorg-x11-xauth</packagereq>
+      <packagereq type="mandatory">xorg-x11-xinit</packagereq>
+      <packagereq type="default">avahi</packagereq>
+      <packagereq type="default">gnome-bluetooth</packagereq>
+      <packagereq type="default">gnome-software</packagereq>
+      <packagereq type="default">libcanberra-gtk3</packagereq>
+      <packagereq type="default">nautilus</packagereq>
     </packagelist>
   </group>
   <group>
@@ -435,6 +651,31 @@
     <packagelist>
       <packagereq type="mandatory">xfce4-session</packagereq>
       <packagereq type="mandatory">xfce4-settings</packagereq>
+    </packagelist>
+  </group>
+  <group>
+    <id>cutefish-desktop</id>
+    <name>Cutefish Desktop</name>
+    <description>Cutefish desktop is a desktop environment focused on simplicity and praciticality.</description>
+    <default>false</default>
+    <uservisible>true</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">abrt</packagereq>
+      <packagereq type="mandatory">cutefish-desktop</packagereq>
+      <packagereq type="mandatory">cutefish-desktop-common</packagereq>
+      <packagereq type="mandatory">cutefish-filemanager</packagereq>
+      <packagereq type="mandatory">cutefish-icons</packagereq>
+      <packagereq type="mandatory">cutefish-screenlocker</packagereq>
+      <packagereq type="mandatory">cutefish-settings</packagereq>
+      <packagereq type="mandatory">cutefish-statusbar</packagereq>
+      <packagereq type="mandatory">cutefish-terminal</packagereq>
+      <packagereq type="mandatory">cutefish-videoplayer</packagereq>
+      <packagereq type="mandatory">kwin</packagereq>
+      <packagereq type="mandatory">sddm</packagereq>
+      <packagereq type="mandatory">ultramarine-backgrounds</packagereq>
+      <packagereq type="default">cutefish-dock</packagereq>
+      <packagereq type="default">kate</packagereq>
+      <packagereq type="default">sddm-theme-cutefish</packagereq>
     </packagelist>
   </group>
   <group>
@@ -1131,129 +1372,6 @@
       <packagereq>terminology</packagereq>
     </packagelist>
   </group>
-
-  <group>
-    <id>core</id>
-    <name>Core</name>
-    <description>Smallest possible installation</description>
-    <default>false</default>
-    <uservisible>false</uservisible>
-    <packagelist>
-      <packagereq type="mandatory">audit</packagereq>
-      <packagereq type="mandatory">basesystem</packagereq>
-      <packagereq type="mandatory">bash</packagereq>
-      <packagereq type="mandatory">coreutils</packagereq>
-      <packagereq type="mandatory">curl</packagereq>
-      <packagereq type="mandatory">dhcp-client</packagereq>
-      <packagereq type="mandatory">dnf</packagereq>
-      <packagereq type="mandatory">e2fsprogs</packagereq>
-      <packagereq type="mandatory">filesystem</packagereq>
-      <packagereq type="mandatory">glibc</packagereq>
-      <packagereq type="mandatory">grubby</packagereq>
-      <packagereq type="mandatory">hostname</packagereq>
-      <packagereq type="mandatory">iproute</packagereq>
-      <packagereq type="mandatory">iputils</packagereq>
-      <packagereq type="mandatory">kbd</packagereq>
-      <packagereq type="mandatory">less</packagereq>
-      <packagereq type="mandatory">man-db</packagereq>
-      <packagereq type="mandatory">ncurses</packagereq>
-      <packagereq type="mandatory">openssh-clients</packagereq>
-      <packagereq type="mandatory">openssh-server</packagereq>
-      <packagereq type="mandatory">parted</packagereq>
-      <packagereq type="mandatory">passwd</packagereq>
-      <packagereq type="mandatory">policycoreutils</packagereq>
-      <packagereq type="mandatory">procps-ng</packagereq>
-      <packagereq type="mandatory">rootfiles</packagereq>
-      <packagereq type="mandatory">rpm</packagereq>
-      <packagereq type="mandatory">selinux-policy-targeted</packagereq>
-      <packagereq type="mandatory">setup</packagereq>
-      <packagereq type="mandatory">shadow-utils</packagereq>
-      <packagereq type="mandatory">sssd-common</packagereq>
-      <packagereq type="mandatory">sssd-kcm</packagereq>
-      <packagereq type="mandatory">sudo</packagereq>
-      <packagereq type="mandatory">systemd</packagereq>
-      <packagereq type="mandatory">util-linux</packagereq>
-      <packagereq type="mandatory">vim-minimal</packagereq>
-      <packagereq type="mandatory">yum</packagereq>
-      <packagereq type="default">dnf-plugins-core</packagereq>
-      <packagereq type="default">dracut-config-rescue</packagereq>
-      <packagereq type="default">ultramarine-repos</packagereq>
-      <packagereq type="default">firewalld</packagereq>
-      <packagereq type="default">NetworkManager</packagereq>
-      <packagereq type="default">plymouth</packagereq>
-      <packagereq type="default">systemd-oomd-defaults</packagereq>
-      <packagereq type="default">systemd-resolved</packagereq>
-      <packagereq type="default">zram-generator-defaults</packagereq>
-      <packagereq type="optional">dracut-config-generic</packagereq>
-      <packagereq type="optional">initial-setup</packagereq>
-      <packagereq type="optional">initscripts</packagereq>
-    </packagelist>
-  </group>
-  <group>
-    <id>buildsys-build</id>
-    <name>Buildsystem building group</name>
-    <description/>
-    <default>false</default>
-    <uservisible>false</uservisible>
-    <packagelist>
-      <packagereq type="mandatory">bash</packagereq>
-      <packagereq type="mandatory">bzip2</packagereq>
-      <packagereq type="mandatory">coreutils</packagereq>
-      <packagereq type="mandatory">cpio</packagereq>
-      <packagereq type="mandatory">diffutils</packagereq>
-      <packagereq type="mandatory">ultramarine-release-common</packagereq>
-      <packagereq type="mandatory">findutils</packagereq>
-      <packagereq type="mandatory">gawk</packagereq>
-      <packagereq type="mandatory">glibc-minimal-langpack</packagereq>
-      <packagereq type="mandatory">grep</packagereq>
-      <packagereq type="mandatory">gzip</packagereq>
-      <packagereq type="mandatory">info</packagereq>
-      <packagereq type="mandatory">patch</packagereq>
-      <packagereq type="mandatory">redhat-rpm-config</packagereq>
-      <packagereq type="mandatory">rpm-build</packagereq>
-      <packagereq type="mandatory">sed</packagereq>
-      <packagereq type="mandatory">shadow-utils</packagereq>
-      <packagereq type="mandatory">tar</packagereq>
-      <packagereq type="mandatory">unzip</packagereq>
-      <packagereq type="mandatory">util-linux</packagereq>
-      <packagereq type="mandatory">which</packagereq>
-      <packagereq type="mandatory">xz</packagereq>
-    </packagelist>
-  </group>
-  <group>
-    <id>critical-path-budgie</id>
-    <name>Critical Path (Budgie)</name>
-    <description>A set of packages that provide the Critical Path functionality for the Budgie desktop</description>
-    <default>false</default>
-    <uservisible>false</uservisible>
-    <packagelist>
-      <packagereq type="mandatory">dconf</packagereq>
-      <packagereq type="mandatory">gdm</packagereq>
-      <packagereq type="mandatory">gnome-control-center</packagereq>
-      <packagereq type="mandatory">gnome-session-xsession</packagereq>
-      <packagereq type="mandatory">gnome-shell</packagereq>
-      <packagereq type="mandatory">gnome-terminal</packagereq>
-      <packagereq type="mandatory">gnome-themes-extra</packagereq>
-      <packagereq type="mandatory">gvfs-fuse</packagereq>
-      <packagereq type="mandatory">xorg-x11-drv-amdgpu</packagereq>
-      <packagereq type="mandatory">xorg-x11-drv-ati</packagereq>
-      <packagereq type="mandatory">xorg-x11-drv-evdev</packagereq>
-      <packagereq type="mandatory">xorg-x11-drv-fbdev</packagereq>
-      <packagereq type="mandatory">xorg-x11-drv-intel</packagereq>
-      <packagereq type="mandatory">xorg-x11-drv-libinput</packagereq>
-      <packagereq type="mandatory">xorg-x11-drv-nouveau</packagereq>
-      <packagereq type="mandatory">xorg-x11-drv-qxl</packagereq>
-      <packagereq type="mandatory">xorg-x11-drv-vesa</packagereq>
-      <packagereq type="mandatory">xorg-x11-server-Xorg</packagereq>
-      <packagereq type="mandatory">xorg-x11-xauth</packagereq>
-      <packagereq type="mandatory">xorg-x11-xinit</packagereq>
-      <packagereq type="default">avahi</packagereq>
-      <packagereq type="default">gnome-bluetooth</packagereq>
-      <packagereq type="default">gnome-software</packagereq>
-      <packagereq type="default">libcanberra-gtk3</packagereq>
-      <packagereq type="default">nautilus</packagereq>
-    </packagelist>
-  </group>
   <group>
     <id>firefox</id>
     <name>Firefox Web Browser</name>
@@ -1266,288 +1384,120 @@
     </packagelist>
   </group>
   <group>
-    <id>budgie-desktop</id>
-    <name>Budgie Desktop</name>
-    <description>Budgie is a desktop environment designed to keep out the way of the user.</description>
-    <default>false</default>
-    <uservisible>true</uservisible>
-    <packagelist>
-      <packagereq type="mandatory">dconf</packagereq>
-      <packagereq type="mandatory">gdm</packagereq>
-      <packagereq type="mandatory">gedit</packagereq>
-      <packagereq type="mandatory">gnome-boxes</packagereq>
-      <packagereq type="mandatory">gnome-connections</packagereq>
-      <packagereq type="mandatory">gnome-control-center</packagereq>
-      <packagereq type="mandatory">gnome-settings-daemon</packagereq>
-      <packagereq type="mandatory">budgie-desktop</packagereq>
-      <packagereq type="mandatory">gnome-software</packagereq>
-      <packagereq type="mandatory">gnome-terminal</packagereq>
-      <packagereq type="mandatory">nautilus</packagereq>
-      <packagereq type="mandatory">polkit</packagereq>
-      <packagereq type="mandatory">yelp</packagereq>
-      <packagereq type="mandatory">budgie-extras</packagereq>
-      <packagereq type="mandatory">budgie-extras-daemon</packagereq>
-      <packagereq type="mandatory">budgie-desktop=view</packagereq>
-      <packagereq type="default">adobe-source-code-pro-fonts</packagereq>
-      <packagereq type="default">at-spi2-atk</packagereq>
-      <packagereq type="default">at-spi2-core</packagereq>
-      <packagereq type="default">avahi</packagereq>
-      <packagereq type="default">baobab</packagereq>
-      <packagereq type="default">cheese</packagereq>
-      <packagereq type="default">eog</packagereq>
-      <packagereq type="default">evince</packagereq>
-      <packagereq type="default">evince-djvu</packagereq>
-      <packagereq type="default">evince-nautilus</packagereq>
-      <packagereq type="default">fprintd-pam</packagereq>
-      <packagereq type="default">glib-networking</packagereq>
-      <packagereq type="default">gnome-bluetooth</packagereq>
-      <packagereq type="default">gnome-calculator</packagereq>
-      <packagereq type="default">gnome-calendar</packagereq>
-      <packagereq type="default">gnome-characters</packagereq>
-      <packagereq type="default">gnome-clocks</packagereq>
-      <packagereq type="default">gnome-color-manager</packagereq>
-      <packagereq type="default">gnome-contacts</packagereq>
-      <packagereq type="default">gnome-disk-utility</packagereq>
-      <packagereq type="default">gnome-font-viewer</packagereq>
-      <packagereq type="default">gnome-logs</packagereq>
-      <packagereq type="default">gnome-maps</packagereq>
-      <packagereq type="default">gnome-photos</packagereq>
-      <packagereq type="default">gnome-remote-desktop</packagereq>
-      <packagereq type="default">gnome-screenshot</packagereq>
-      <packagereq type="default">gnome-system-monitor</packagereq>
-      <packagereq type="default">gnome-terminal-nautilus</packagereq>
-      <packagereq type="default">gnome-themes-extra</packagereq>
-      <packagereq type="default">gnome-user-docs</packagereq>
-      <packagereq type="default">gnome-user-share</packagereq>
-      <packagereq type="default">gnome-weather</packagereq>
-      <packagereq type="default">gvfs-afc</packagereq>
-      <packagereq type="default">gvfs-afp</packagereq>
-      <packagereq type="default">gvfs-archive</packagereq>
-      <packagereq type="default">gvfs-fuse</packagereq>
-      <packagereq type="default">gvfs-goa</packagereq>
-      <packagereq type="default">gvfs-gphoto2</packagereq>
-      <packagereq type="default">gvfs-mtp</packagereq>
-      <packagereq type="default">gvfs-smb</packagereq>
-      <packagereq type="default">libcanberra-gtk3</packagereq>
-      <packagereq type="default">libproxy-webkitgtk4</packagereq>
-      <packagereq type="default">librsvg2</packagereq>
-      <packagereq type="default">libsane-hpaio</packagereq>
-      <packagereq type="default">mesa-dri-drivers</packagereq>
-      <packagereq type="default">mesa-libEGL</packagereq>
-      <packagereq type="default">ModemManager</packagereq>
-      <packagereq type="default">NetworkManager-adsl</packagereq>
-      <packagereq type="default">NetworkManager-openconnect-gnome</packagereq>
-      <packagereq type="default">NetworkManager-openvpn-gnome</packagereq>
-      <packagereq type="default">NetworkManager-ppp</packagereq>
-      <packagereq type="default">NetworkManager-pptp-gnome</packagereq>
-      <packagereq type="default">NetworkManager-ssh-gnome</packagereq>
-      <packagereq type="default">NetworkManager-vpnc-gnome</packagereq>
-      <packagereq type="default">NetworkManager-wwan</packagereq>
-      <packagereq type="default">orca</packagereq>
-      <packagereq type="default">PackageKit-command-not-found</packagereq>
-      <packagereq type="default">PackageKit-gtk3-module</packagereq>
-      <packagereq type="default">rygel</packagereq>
-      <packagereq type="default">sane-backends-drivers-scanners</packagereq>
-      <packagereq type="default">simple-scan</packagereq>
-      <packagereq type="default">sushi</packagereq>
-      <packagereq type="default">totem</packagereq>
-      <packagereq type="default">tracker</packagereq>
-      <packagereq type="default">tracker-miners</packagereq>
-      <packagereq type="default">xdg-desktop-portal</packagereq>
-      <packagereq type="default">xdg-desktop-portal-gnome</packagereq>
-      <packagereq type="default">xdg-desktop-portal-gtk</packagereq>
-      <packagereq type="default">xdg-user-dirs-gtk</packagereq>
-    </packagelist>
-  </group>
-  <group>
-    <id>standard</id>
-    <name>Standard</name>
-    <description>Common set of utilities that extend the minimal installation.</description>
+    <id>flagship-product</id>
+    <!-- Translators: Don't translate this product name -->
+    <name>Ultramarine Workstation product core</name>
+    <description>Packages mandatory for the workstation product.</description>
     <default>false</default>
     <uservisible>false</uservisible>
     <packagelist>
-      <packagereq type="mandatory">abrt-cli</packagereq>
-      <packagereq type="mandatory">acl</packagereq>
-      <packagereq type="mandatory">at</packagereq>
-      <packagereq type="mandatory">attr</packagereq>
-      <packagereq type="mandatory">bash-completion</packagereq>
-      <packagereq type="mandatory">bc</packagereq>
-      <packagereq type="mandatory">bind-utils</packagereq>
-      <packagereq type="mandatory">btrfs-progs</packagereq>
-      <packagereq type="mandatory">bzip2</packagereq>
-      <packagereq type="mandatory">cifs-utils</packagereq>
-      <packagereq type="mandatory">compsize</packagereq>
-      <packagereq type="mandatory">cpio</packagereq>
-      <packagereq type="mandatory">crontabs</packagereq>
-      <packagereq type="mandatory">cryptsetup</packagereq>
-      <packagereq type="mandatory">cyrus-sasl-plain</packagereq>
-      <packagereq type="mandatory">dbus</packagereq>
-      <packagereq type="mandatory">default-editor</packagereq>
-      <packagereq type="mandatory">deltarpm</packagereq>
-      <packagereq type="mandatory">dos2unix</packagereq>
-      <packagereq type="mandatory">dosfstools</packagereq>
-      <packagereq type="mandatory">ed</packagereq>
-      <packagereq type="mandatory">ethtool</packagereq>
-      <packagereq type="mandatory">exfatprogs</packagereq>
-      <packagereq type="mandatory">file</packagereq>
-      <packagereq type="mandatory">fpaste</packagereq>
-      <packagereq type="mandatory">fprintd-pam</packagereq>
-      <packagereq type="mandatory">gnupg2</packagereq>
-      <packagereq type="mandatory">hunspell</packagereq>
-      <packagereq type="mandatory">iptstate</packagereq>
-      <packagereq type="mandatory">irqbalance</packagereq>
-      <packagereq type="mandatory">jwhois</packagereq>
-      <packagereq type="mandatory">logrotate</packagereq>
-      <packagereq type="mandatory">lsof</packagereq>
-      <packagereq type="mandatory">mailcap</packagereq>
-      <packagereq type="mandatory">man-pages</packagereq>
-      <packagereq type="mandatory">mcelog</packagereq>
-      <packagereq type="mandatory">mdadm</packagereq>
+      <packagereq type="mandatory">dnf</packagereq>
+      <packagereq type="mandatory">linux-firmware</packagereq>
       <packagereq type="mandatory">microcode_ctl</packagereq>
-      <packagereq type="mandatory">mlocate</packagereq>
-      <packagereq type="mandatory">mtr</packagereq>
-      <packagereq type="mandatory">net-tools</packagereq>
-      <packagereq type="mandatory">nfs-utils</packagereq>
-      <packagereq type="mandatory">nmap-ncat</packagereq>
-      <packagereq type="mandatory">ntfs-3g</packagereq>
-      <packagereq type="mandatory">ntfsprogs</packagereq>
-      <packagereq type="mandatory">opensc</packagereq>
-      <packagereq type="mandatory">passwdqc</packagereq>
-      <packagereq type="mandatory">pciutils</packagereq>
-      <packagereq type="mandatory">pinfo</packagereq>
-      <packagereq type="mandatory">psacct</packagereq>
-      <packagereq type="mandatory">quota</packagereq>
-      <packagereq type="mandatory">realmd</packagereq>
-      <packagereq type="mandatory">rsync</packagereq>
-      <packagereq type="mandatory">rsyslog</packagereq>
-      <packagereq type="mandatory">smartmontools</packagereq>
-      <packagereq type="mandatory">sos</packagereq>
-      <packagereq type="mandatory">sssd</packagereq>
       <packagereq type="mandatory">sudo</packagereq>
-      <packagereq type="mandatory">symlinks</packagereq>
       <packagereq type="mandatory">systemd-udev</packagereq>
       <packagereq type="mandatory">tar</packagereq>
-      <packagereq type="mandatory">tcpdump</packagereq>
-      <packagereq type="mandatory">time</packagereq>
-      <packagereq type="mandatory">traceroute</packagereq>
-      <packagereq type="mandatory">tree</packagereq>
-      <packagereq type="mandatory">unzip</packagereq>
-      <packagereq type="mandatory">usbutils</packagereq>
-      <packagereq type="mandatory">util-linux-user</packagereq>
-      <packagereq type="mandatory">wget</packagereq>
-      <packagereq type="mandatory">which</packagereq>
-      <packagereq type="mandatory">words</packagereq>
-      <packagereq type="mandatory">zip</packagereq>
-      <packagereq type="conditional" requires="gnome-control-center">chrony</packagereq>
+      <packagereq type="mandatory">xorg-x11-drv-libinput</packagereq>
+      <packagereq type="default">abrt-cli</packagereq>
+      <packagereq type="default">abrt-desktop</packagereq>
+      <packagereq type="default">abrt-java-connector</packagereq>
+      <packagereq type="default">acl</packagereq>
+      <packagereq type="default">adwaita-qt5</packagereq>
+      <packagereq type="default">attr</packagereq>
+      <packagereq type="default">bash-completion</packagereq>
+      <packagereq type="default">bc</packagereq>
+      <packagereq type="default">bind-utils</packagereq>
+      <packagereq type="default">btrfs-progs</packagereq>
+      <packagereq type="default">bzip2</packagereq>
+      <packagereq type="default">chrony</packagereq>
+      <packagereq type="default">cifs-utils</packagereq>
+      <packagereq type="default">compsize</packagereq>
+      <packagereq type="default">cpio</packagereq>
+      <packagereq type="default">cryptsetup</packagereq>
+      <packagereq type="default">cyrus-sasl-plain</packagereq>
+      <packagereq type="default">default-editor</packagereq>
+      <packagereq type="default">deltarpm</packagereq>
+      <packagereq type="default">desktop-backgrounds-gnome</packagereq>
+      <packagereq type="default">dnf-plugins-core</packagereq>
+      <packagereq type="default">dos2unix</packagereq>
+      <packagereq type="default">dosfstools</packagereq>
+      <packagereq type="default">ethtool</packagereq>
+      <packagereq type="default">exfatprogs</packagereq>
+      <packagereq type="default">file</packagereq>
+      <packagereq type="default">fpaste</packagereq>
+      <packagereq type="default">fros-gnome</packagereq>
+      <packagereq type="default">gamemode</packagereq>
+      <packagereq type="default">git</packagereq>
+      <packagereq type="default">glibc-all-langpacks</packagereq>
+      <packagereq type="default">gnome-shell-extension-background-logo</packagereq>
+      <packagereq type="default">gnupg2</packagereq>
+      <packagereq type="default">hunspell</packagereq>
+      <packagereq type="default">ibus-anthy</packagereq>
+      <packagereq type="default">ibus-gtk3</packagereq>
+      <packagereq type="default">ibus-hangul</packagereq>
+      <packagereq type="default">ibus-libpinyin</packagereq>
+      <packagereq type="default">ibus-libzhuyin</packagereq>
+      <packagereq type="default">ibus-m17n</packagereq>
+      <packagereq type="default">ibus-typing-booster</packagereq>
+      <packagereq type="default">iptstate</packagereq>
+      <packagereq type="default">jwhois</packagereq>
+      <packagereq type="default">logrotate</packagereq>
+      <packagereq type="default">lrzsz</packagereq>
+      <packagereq type="default">lsof</packagereq>
+      <packagereq type="default">mailcap</packagereq>
+      <packagereq type="default">man-pages</packagereq>
+      <packagereq type="default">mcelog</packagereq>
+      <packagereq type="default">mdadm</packagereq>
+      <packagereq type="default">mediawriter</packagereq>
+      <packagereq type="default">mlocate</packagereq>
+      <packagereq type="default">mtr</packagereq>
+      <packagereq type="default">net-tools</packagereq>
+      <packagereq type="default">NetworkManager-config-connectivity-fedora</packagereq>
+      <packagereq type="default">nfs-utils</packagereq>
+      <packagereq type="default">nmap-ncat</packagereq>
+      <packagereq type="default">nss-mdns</packagereq>
+      <packagereq type="default">ntfs-3g</packagereq>
+      <packagereq type="default">ntfsprogs</packagereq>
+      <packagereq type="default">opensc</packagereq>
+      <packagereq type="default">pam_afs_session</packagereq>
+      <packagereq type="default">passwdqc</packagereq>
+      <packagereq type="default">pciutils</packagereq>
+      <packagereq type="default">pinentry-gnome3</packagereq>
+      <packagereq type="default">pinfo</packagereq>
+      <packagereq type="default">plymouth-system-theme</packagereq>
+      <packagereq type="default">policycoreutils-python-utils</packagereq>
+      <packagereq type="default">psacct</packagereq>
+      <packagereq type="default">psmisc</packagereq>
+      <packagereq type="default">python3-dnf-plugin-system-upgrade</packagereq>
+      <packagereq type="default">qgnomeplatform</packagereq>
+      <packagereq type="default">qt5-qtbase</packagereq>
+      <packagereq type="default">qt5-qtbase-gui</packagereq>
+      <packagereq type="default">qt5-qtdeclarative</packagereq>
+      <packagereq type="default">qt5-qtxmlpatterns</packagereq>
+      <packagereq type="default">quota</packagereq>
+      <packagereq type="default">realmd</packagereq>
+      <packagereq type="default">rhythmbox</packagereq>
+      <packagereq type="default">rsync</packagereq>
+      <packagereq type="default">sos</packagereq>
+      <packagereq type="default">sssd</packagereq>
+      <packagereq type="default">symlinks</packagereq>
+      <packagereq type="default">tcpdump</packagereq>
+      <packagereq type="default">thermald</packagereq>
+      <packagereq type="default">time</packagereq>
+      <packagereq type="default">traceroute</packagereq>
+      <packagereq type="default">tree</packagereq>
+      <packagereq type="default">ultramarine-backgrounds-basic</packagereq>
+      <packagereq type="default">ultramarine-release-flagship</packagereq>
+      <packagereq type="default">unoconv</packagereq>
+      <packagereq type="default">unzip</packagereq>
+      <packagereq type="default">uresourced</packagereq>
+      <packagereq type="default">usbutils</packagereq>
+      <packagereq type="default">wget</packagereq>
+      <packagereq type="default">which</packagereq>
+      <packagereq type="default">words</packagereq>
+      <packagereq type="default">zip</packagereq>
     </packagelist>
   </group>
-  <group>
-    <id>cutefish-desktop</id>
-    <name>Cutefish Desktop</name>
-    <description>Cutefish desktop is a desktop environment focused on simplicity and praciticality.</description>
-    <default>false</default>
-    <uservisible>true</uservisible>
-    <packagelist>
-      <packagereq type="mandatory">cutefish-desktop</packagereq>
-      <packagereq type="mandatory">cutefish-desktop-common</packagereq>
-      <packagereq type="mandatory">cutefish-videoplayer</packagereq>
-      <packagereq type="mandatory">abrt</packagereq>
-      <packagereq type="mandatory">cutefish-filemanager</packagereq>
-      <packagereq type="mandatory">ultramarine-backgrounds</packagereq>
-      <packagereq type="mandatory">sddm</packagereq>
-      <packagereq type="mandatory">cutefish-icons</packagereq>
-      <packagereq type="mandatory">cutefish-screenlocker</packagereq>
-      <packagereq type="mandatory">cutefish-settings</packagereq>
-      <packagereq type="mandatory">cutefish-statusbar</packagereq>
-      <packagereq type="mandatory">cutefish-terminal</packagereq>
-      <packagereq type="default">cutefish-videoplayer</packagereq>
-      <packagereq type="default">kate</packagereq>
-      <packagereq type="default">sddm-theme-cutefish</packagereq>
-      <packagereq type="default">cutefish-dock</packagereq>
-      <packagereq type="mandatory">kwin</packagereq>
-    </packagelist>
-  </group>
-  <environment>
-    <id>custom-environment</id>
-    <name>Ultramarine Custom Operating System</name>
-    <description>Basic building block for a custom Ultramarine system.</description>
-    <display_order>1</display_order>
-    <grouplist>
-      <groupid>core</groupid>
-    </grouplist>
-    <optionlist>
-      <groupid>standard</groupid>
-      <groupid>guest-agents</groupid>
-      <groupid>networkmanager-submodules</groupid>
-    </optionlist>
-  </environment>
-  <environment>
-    <id>minimal-environment</id>
-    <name>Minimal Install</name>
-    <description>Basic functionality.</description>
-    <display_order>1</display_order>
-    <grouplist>
-      <groupid>core</groupid>
-    </grouplist>
-    <optionlist>
-      <groupid>standard</groupid>
-      <groupid>guest-agents</groupid>
-      <groupid>networkmanager-submodules</groupid>
-    </optionlist>
-  </environment>
-  <category>
-    <id>budgie-desktop-environment</id>
-    <name>Budgie Desktop</name>
-    <description>Budgie is a desktop environment designed to keep out the way of the user.</description>
-    <display_order>5</display_order>
-    <grouplist>
-      <groupid>firefox</groupid>
-      <groupid>gnome-desktop</groupid>
-      <groupid>libreoffice</groupid>
-    </grouplist>
-  </category>
-  <category>
-    <id>base-system</id>
-    <name>Base System</name>
-    <description>Various core pieces of the system.</description>
-    <display_order>99</display_order>
-    <grouplist>
-      <groupid>admin-tools</groupid>
-      <groupid>dial-up</groupid>
-      <groupid>fonts</groupid>
-      <groupid>hardware-support</groupid>
-      <groupid>input-methods</groupid>
-      <groupid>java</groupid>
-      <groupid>legacy-fonts</groupid>
-      <groupid>networkmanager-submodules</groupid>
-      <groupid>standard</groupid>
-      <groupid>system-tools</groupid>
-      <groupid>virtualization</groupid>
-    </grouplist>
-  </category>
-  <environment>
-    <id>flagship-product-environment</id>
-    <name>Ultramarine Flagship</name>
-    <description>Ultramarine Flagship is the flagship Ultramarine experience.</description>
-    <display_order>2</display_order>
-    <grouplist>
-      <groupid>base-x</groupid>
-      <groupid>container-management</groupid>
-      <groupid>core</groupid>
-      <groupid>firefox</groupid>
-      <groupid>fonts</groupid>
-      <groupid>budgie-desktop</groupid>
-      <groupid>guest-desktop-agents</groupid>
-      <groupid>hardware-support</groupid>
-      <groupid>libreoffice</groupid>
-      <groupid>multimedia</groupid>
-      <groupid>networkmanager-submodules</groupid>
-      <groupid>printing</groupid>
-    </grouplist>
-    <optionlist>
-      <groupid>arm-tools</groupid>
-    </optionlist>
-  </environment>
   <group>
     <id>font-design</id>
     <name>Font design and packaging</name>
@@ -2861,8 +2811,8 @@
       <packagereq type="optional">libifp</packagereq>
       <packagereq type="optional">liquidio-firmware</packagereq>
       <packagereq type="optional">lsscsi</packagereq>
-      <packagereq type="optional">multican</packagereq>
       <packagereq type="optional">mrvlprestera-firmware</packagereq>
+      <packagereq type="optional">multican</packagereq>
       <packagereq type="optional">netronome-firmware</packagereq>
       <packagereq type="optional">opensc</packagereq>
       <packagereq type="optional">pcsc-lite</packagereq>
@@ -3146,7 +3096,6 @@
       <packagereq type="mandatory">sddm</packagereq>
       <packagereq type="mandatory">sddm-breeze</packagereq>
       <packagereq type="mandatory">sddm-kcm</packagereq>
-      <packagereq type="optional">plasma-pk-updates</packagereq>
       <packagereq type="conditional" requires="at-spi2-core">qt-at-spi</packagereq>
       <packagereq type="default">abrt-desktop</packagereq>
       <packagereq type="default">adwaita-gtk2-theme</packagereq>
@@ -3231,6 +3180,7 @@
       <packagereq type="default">spectacle</packagereq>
       <packagereq type="default">xdg-desktop-portal-gnome</packagereq>
       <packagereq type="default">xorg-x11-drv-libinput</packagereq>
+      <packagereq type="optional">plasma-pk-updates</packagereq>
     </packagelist>
   </group>
   <group>
@@ -4874,8 +4824,8 @@
       <packagereq type="mandatory">polkit</packagereq>
       <packagereq type="mandatory">realmd</packagereq>
       <packagereq type="default">dhcp-client</packagereq>
-      <packagereq type="default">ultramarine-release-basic</packagereq>
       <packagereq type="default">NetworkManager-team</packagereq>
+      <packagereq type="default">ultramarine-release-basic</packagereq>
     </packagelist>
   </group>
   <group>
@@ -5023,78 +4973,78 @@
     <default>false</default>
     <uservisible>false</uservisible>
     <packagelist>
-      <packagereq>abrt-cli</packagereq>
-      <packagereq>acl</packagereq>
-      <packagereq>at</packagereq>
-      <packagereq>attr</packagereq>
-      <packagereq>bash-completion</packagereq>
-      <packagereq>bc</packagereq>
-      <packagereq>bind-utils</packagereq>
-      <packagereq>btrfs-progs</packagereq>
-      <packagereq>bzip2</packagereq>
-      <packagereq>cifs-utils</packagereq>
-      <packagereq>compsize</packagereq>
-      <packagereq>cpio</packagereq>
-      <packagereq>crontabs</packagereq>
-      <packagereq>cryptsetup</packagereq>
-      <packagereq>cyrus-sasl-plain</packagereq>
-      <packagereq>dbus</packagereq>
-      <packagereq>default-editor</packagereq>
-      <packagereq>deltarpm</packagereq>
-      <packagereq>dos2unix</packagereq>
-      <packagereq>dosfstools</packagereq>
-      <packagereq>ed</packagereq>
-      <packagereq>ethtool</packagereq>
-      <packagereq>exfatprogs</packagereq>
-      <packagereq>file</packagereq>
-      <packagereq>fpaste</packagereq>
-      <packagereq>fprintd-pam</packagereq>
-      <packagereq>gnupg2</packagereq>
-      <packagereq>hunspell</packagereq>
-      <packagereq>iptstate</packagereq>
-      <packagereq>irqbalance</packagereq>
-      <packagereq>jwhois</packagereq>
-      <packagereq>logrotate</packagereq>
-      <packagereq>lsof</packagereq>
-      <packagereq>mailcap</packagereq>
-      <packagereq>man-pages</packagereq>
-      <packagereq>mcelog</packagereq>
-      <packagereq>mdadm</packagereq>
-      <packagereq>microcode_ctl</packagereq>
-      <packagereq>mlocate</packagereq>
-      <packagereq>mtr</packagereq>
-      <packagereq>net-tools</packagereq>
-      <packagereq>nfs-utils</packagereq>
-      <packagereq>nmap-ncat</packagereq>
-      <packagereq>ntfs-3g</packagereq>
-      <packagereq>ntfsprogs</packagereq>
-      <packagereq>opensc</packagereq>
-      <packagereq>passwdqc</packagereq>
-      <packagereq>pciutils</packagereq>
-      <packagereq>pinfo</packagereq>
-      <packagereq>psacct</packagereq>
-      <packagereq>quota</packagereq>
-      <packagereq>realmd</packagereq>
-      <packagereq>rsync</packagereq>
-      <packagereq>rsyslog</packagereq>
-      <packagereq>smartmontools</packagereq>
-      <packagereq>sos</packagereq>
-      <packagereq>sssd</packagereq>
-      <packagereq>sudo</packagereq>
-      <packagereq>symlinks</packagereq>
-      <packagereq>systemd-udev</packagereq>
-      <packagereq>tar</packagereq>
-      <packagereq>tcpdump</packagereq>
-      <packagereq>time</packagereq>
-      <packagereq>traceroute</packagereq>
-      <packagereq>tree</packagereq>
-      <packagereq>unzip</packagereq>
-      <packagereq>usbutils</packagereq>
-      <packagereq>util-linux-user</packagereq>
-      <packagereq>wget</packagereq>
-      <packagereq>which</packagereq>
-      <packagereq>words</packagereq>
-      <packagereq>zip</packagereq>
+      <packagereq type="mandatory">abrt-cli</packagereq>
+      <packagereq type="mandatory">acl</packagereq>
+      <packagereq type="mandatory">at</packagereq>
+      <packagereq type="mandatory">attr</packagereq>
+      <packagereq type="mandatory">bash-completion</packagereq>
+      <packagereq type="mandatory">bc</packagereq>
+      <packagereq type="mandatory">bind-utils</packagereq>
+      <packagereq type="mandatory">btrfs-progs</packagereq>
+      <packagereq type="mandatory">bzip2</packagereq>
+      <packagereq type="mandatory">cifs-utils</packagereq>
+      <packagereq type="mandatory">compsize</packagereq>
+      <packagereq type="mandatory">cpio</packagereq>
+      <packagereq type="mandatory">crontabs</packagereq>
+      <packagereq type="mandatory">cryptsetup</packagereq>
+      <packagereq type="mandatory">cyrus-sasl-plain</packagereq>
+      <packagereq type="mandatory">dbus</packagereq>
+      <packagereq type="mandatory">default-editor</packagereq>
+      <packagereq type="mandatory">deltarpm</packagereq>
+      <packagereq type="mandatory">dos2unix</packagereq>
+      <packagereq type="mandatory">dosfstools</packagereq>
+      <packagereq type="mandatory">ed</packagereq>
+      <packagereq type="mandatory">ethtool</packagereq>
+      <packagereq type="mandatory">exfatprogs</packagereq>
+      <packagereq type="mandatory">file</packagereq>
+      <packagereq type="mandatory">fpaste</packagereq>
+      <packagereq type="mandatory">fprintd-pam</packagereq>
+      <packagereq type="mandatory">gnupg2</packagereq>
+      <packagereq type="mandatory">hunspell</packagereq>
+      <packagereq type="mandatory">iptstate</packagereq>
+      <packagereq type="mandatory">irqbalance</packagereq>
+      <packagereq type="mandatory">jwhois</packagereq>
+      <packagereq type="mandatory">logrotate</packagereq>
+      <packagereq type="mandatory">lsof</packagereq>
+      <packagereq type="mandatory">mailcap</packagereq>
+      <packagereq type="mandatory">man-pages</packagereq>
+      <packagereq type="mandatory">mcelog</packagereq>
+      <packagereq type="mandatory">mdadm</packagereq>
+      <packagereq type="mandatory">microcode_ctl</packagereq>
+      <packagereq type="mandatory">mlocate</packagereq>
+      <packagereq type="mandatory">mtr</packagereq>
+      <packagereq type="mandatory">net-tools</packagereq>
+      <packagereq type="mandatory">nfs-utils</packagereq>
+      <packagereq type="mandatory">nmap-ncat</packagereq>
+      <packagereq type="mandatory">ntfs-3g</packagereq>
+      <packagereq type="mandatory">ntfsprogs</packagereq>
+      <packagereq type="mandatory">opensc</packagereq>
+      <packagereq type="mandatory">passwdqc</packagereq>
+      <packagereq type="mandatory">pciutils</packagereq>
+      <packagereq type="mandatory">pinfo</packagereq>
+      <packagereq type="mandatory">psacct</packagereq>
+      <packagereq type="mandatory">quota</packagereq>
+      <packagereq type="mandatory">realmd</packagereq>
+      <packagereq type="mandatory">rsync</packagereq>
+      <packagereq type="mandatory">rsyslog</packagereq>
+      <packagereq type="mandatory">smartmontools</packagereq>
+      <packagereq type="mandatory">sos</packagereq>
+      <packagereq type="mandatory">sssd</packagereq>
+      <packagereq type="mandatory">sudo</packagereq>
+      <packagereq type="mandatory">symlinks</packagereq>
+      <packagereq type="mandatory">systemd-udev</packagereq>
+      <packagereq type="mandatory">tar</packagereq>
+      <packagereq type="mandatory">tcpdump</packagereq>
+      <packagereq type="mandatory">time</packagereq>
+      <packagereq type="mandatory">traceroute</packagereq>
+      <packagereq type="mandatory">tree</packagereq>
+      <packagereq type="mandatory">unzip</packagereq>
+      <packagereq type="mandatory">usbutils</packagereq>
+      <packagereq type="mandatory">util-linux-user</packagereq>
+      <packagereq type="mandatory">wget</packagereq>
+      <packagereq type="mandatory">which</packagereq>
+      <packagereq type="mandatory">words</packagereq>
+      <packagereq type="mandatory">zip</packagereq>
       <packagereq type="conditional" requires="gnome-control-center">chrony</packagereq>
     </packagelist>
   </group>
@@ -5547,121 +5497,6 @@
     </packagelist>
   </group>
   <group>
-    <id>flagship-product</id>
-    <!-- Translators: Don't translate this product name -->
-    <name>Ultramarine Workstation product core</name>
-    <description>Packages mandatory for the workstation product.</description>
-    <default>false</default>
-    <uservisible>false</uservisible>
-    <packagelist>
-      <packagereq type="mandatory">dnf</packagereq>
-      <packagereq type="mandatory">linux-firmware</packagereq>
-      <packagereq type="mandatory">microcode_ctl</packagereq>
-      <packagereq type="mandatory">sudo</packagereq>
-      <packagereq type="mandatory">systemd-udev</packagereq>
-      <packagereq type="mandatory">tar</packagereq>
-      <packagereq type="mandatory">xorg-x11-drv-libinput</packagereq>
-      <packagereq type="default">abrt-cli</packagereq>
-      <packagereq type="default">abrt-desktop</packagereq>
-      <packagereq type="default">abrt-java-connector</packagereq>
-      <packagereq type="default">acl</packagereq>
-      <packagereq type="default">adwaita-qt5</packagereq>
-      <packagereq type="default">attr</packagereq>
-      <packagereq type="default">bash-completion</packagereq>
-      <packagereq type="default">bc</packagereq>
-      <packagereq type="default">bind-utils</packagereq>
-      <packagereq type="default">btrfs-progs</packagereq>
-      <packagereq type="default">bzip2</packagereq>
-      <packagereq type="default">chrony</packagereq>
-      <packagereq type="default">cifs-utils</packagereq>
-      <packagereq type="default">compsize</packagereq>
-      <packagereq type="default">cpio</packagereq>
-      <packagereq type="default">cryptsetup</packagereq>
-      <packagereq type="default">cyrus-sasl-plain</packagereq>
-      <packagereq type="default">default-editor</packagereq>
-      <packagereq type="default">deltarpm</packagereq>
-      <packagereq type="default">desktop-backgrounds-gnome</packagereq>
-      <packagereq type="default">dnf-plugins-core</packagereq>
-      <packagereq type="default">dos2unix</packagereq>
-      <packagereq type="default">dosfstools</packagereq>
-      <packagereq type="default">ethtool</packagereq>
-      <packagereq type="default">exfatprogs</packagereq>
-      <packagereq type="default">ultramarine-release-flagship</packagereq>
-      <packagereq type="default">ultramarine-backgrounds-basic</packagereq>
-      <packagereq type="default">file</packagereq>
-      <packagereq type="default">fpaste</packagereq>
-      <packagereq type="default">fros-gnome</packagereq>
-      <packagereq type="default">gamemode</packagereq>
-      <packagereq type="default">git</packagereq>
-      <packagereq type="default">glibc-all-langpacks</packagereq>
-      <packagereq type="default">gnome-shell-extension-background-logo</packagereq>
-      <packagereq type="default">gnupg2</packagereq>
-      <packagereq type="default">hunspell</packagereq>
-      <packagereq type="default">ibus-anthy</packagereq>
-      <packagereq type="default">ibus-gtk3</packagereq>
-      <packagereq type="default">ibus-hangul</packagereq>
-      <packagereq type="default">ibus-libpinyin</packagereq>
-      <packagereq type="default">ibus-libzhuyin</packagereq>
-      <packagereq type="default">ibus-m17n</packagereq>
-      <packagereq type="default">ibus-typing-booster</packagereq>
-      <packagereq type="default">iptstate</packagereq>
-      <packagereq type="default">jwhois</packagereq>
-      <packagereq type="default">logrotate</packagereq>
-      <packagereq type="default">lrzsz</packagereq>
-      <packagereq type="default">lsof</packagereq>
-      <packagereq type="default">mailcap</packagereq>
-      <packagereq type="default">man-pages</packagereq>
-      <packagereq type="default">mcelog</packagereq>
-      <packagereq type="default">mdadm</packagereq>
-      <packagereq type="default">mediawriter</packagereq>
-      <packagereq type="default">mlocate</packagereq>
-      <packagereq type="default">mtr</packagereq>
-      <packagereq type="default">net-tools</packagereq>
-      <packagereq type="default">NetworkManager-config-connectivity-fedora</packagereq>
-      <packagereq type="default">nfs-utils</packagereq>
-      <packagereq type="default">nmap-ncat</packagereq>
-      <packagereq type="default">nss-mdns</packagereq>
-      <packagereq type="default">ntfs-3g</packagereq>
-      <packagereq type="default">ntfsprogs</packagereq>
-      <packagereq type="default">opensc</packagereq>
-      <packagereq type="default">pam_afs_session</packagereq>
-      <packagereq type="default">passwdqc</packagereq>
-      <packagereq type="default">pciutils</packagereq>
-      <packagereq type="default">pinentry-gnome3</packagereq>
-      <packagereq type="default">pinfo</packagereq>
-      <packagereq type="default">plymouth-system-theme</packagereq>
-      <packagereq type="default">policycoreutils-python-utils</packagereq>
-      <packagereq type="default">psacct</packagereq>
-      <packagereq type="default">psmisc</packagereq>
-      <packagereq type="default">python3-dnf-plugin-system-upgrade</packagereq>
-      <packagereq type="default">qgnomeplatform</packagereq>
-      <packagereq type="default">qt5-qtbase</packagereq>
-      <packagereq type="default">qt5-qtbase-gui</packagereq>
-      <packagereq type="default">qt5-qtdeclarative</packagereq>
-      <packagereq type="default">qt5-qtxmlpatterns</packagereq>
-      <packagereq type="default">quota</packagereq>
-      <packagereq type="default">realmd</packagereq>
-      <packagereq type="default">rhythmbox</packagereq>
-      <packagereq type="default">rsync</packagereq>
-      <packagereq type="default">sos</packagereq>
-      <packagereq type="default">sssd</packagereq>
-      <packagereq type="default">symlinks</packagereq>
-      <packagereq type="default">tcpdump</packagereq>
-      <packagereq type="default">thermald</packagereq>
-      <packagereq type="default">time</packagereq>
-      <packagereq type="default">traceroute</packagereq>
-      <packagereq type="default">tree</packagereq>
-      <packagereq type="default">unoconv</packagereq>
-      <packagereq type="default">unzip</packagereq>
-      <packagereq type="default">uresourced</packagereq>
-      <packagereq type="default">usbutils</packagereq>
-      <packagereq type="default">wget</packagereq>
-      <packagereq type="default">which</packagereq>
-      <packagereq type="default">words</packagereq>
-      <packagereq type="default">zip</packagereq>
-    </packagelist>
-  </group>
-  <group>
     <id>x-software-development</id>
     <name>X Software Development</name>
     <description>These packages allow you to develop applications for the X Window System.</description>
@@ -5956,9 +5791,22 @@
       <groupid>core</groupid>
     </grouplist>
     <optionlist>
-      <groupid>standard</groupid>
-      <groupid>guest-agents</groupid>
+      <!-- Include literally all of the groups in here -->
+      <groupid>admin-tools</groupid>
+      <groupid>base-x</groupid>
+      <groupid>dial-up</groupid>
+      <groupid>fonts</groupid>
+      <groupid>hardware-support</groupid>
+      <groupid>input-methods</groupid>
+      <groupid>multimedia</groupid>
       <groupid>networkmanager-submodules</groupid>
+      <groupid>standard</groupid>
+      <groupid>printing</groupid>
+      <groupid>xfce-desktop</groupid>
+      <groupid>xfce-media</groupid>
+      <groupid>office</groupid>
+      <groupid>gnome-desktop</groupid>
+
     </optionlist>
   </environment>
   <environment>
@@ -6033,6 +5881,29 @@
       <groupid>xfce-office</groupid>
       <groupid>3d-printing</groupid>
       <groupid>cloud-management</groupid>
+    </optionlist>
+  </environment>
+  <environment>
+    <id>flagship-product-environment</id>
+    <name>Ultramarine Flagship</name>
+    <description>Ultramarine Flagship is the flagship Ultramarine experience.</description>
+    <display_order>2</display_order>
+    <grouplist>
+      <groupid>base-x</groupid>
+      <groupid>container-management</groupid>
+      <groupid>core</groupid>
+      <groupid>firefox</groupid>
+      <groupid>fonts</groupid>
+      <groupid>budgie-desktop</groupid>
+      <groupid>guest-desktop-agents</groupid>
+      <groupid>hardware-support</groupid>
+      <groupid>libreoffice</groupid>
+      <groupid>multimedia</groupid>
+      <groupid>networkmanager-submodules</groupid>
+      <groupid>printing</groupid>
+    </grouplist>
+    <optionlist>
+      <groupid>arm-tools</groupid>
     </optionlist>
   </environment>
   <environment>
@@ -6487,6 +6358,17 @@
     </grouplist>
   </category>
   <category>
+    <id>budgie-desktop-environment</id>
+    <name>Budgie Desktop</name>
+    <description>Budgie is a desktop environment designed to keep out the way of the user.</description>
+    <display_order>5</display_order>
+    <grouplist>
+      <groupid>firefox</groupid>
+      <groupid>gnome-desktop</groupid>
+      <groupid>libreoffice</groupid>
+    </grouplist>
+  </category>
+  <category>
     <id>gnome-desktop-environment</id>
     <name>GNOME Desktop</name>
     <description>GNOME is a highly intuitive and user friendly desktop environment.</description>
@@ -6509,7 +6391,6 @@
       <groupid>development-tools</groupid>
       <groupid>eclipse</groupid>
       <groupid>electronic-lab</groupid>
-      <groupid>umpkg</groupid>
       <groupid>font-design</groupid>
       <groupid>gnome-software-development</groupid>
       <groupid>haskell</groupid>
@@ -6531,6 +6412,7 @@
       <groupid>ruby</groupid>
       <groupid>rubyonrails</groupid>
       <groupid>sql-server</groupid>
+      <groupid>umpkg</groupid>
       <groupid>virtualization</groupid>
       <groupid>web-server</groupid>
       <groupid>x-software-development</groupid>
@@ -6572,6 +6454,25 @@
       <groupid>web-server</groupid>
     </grouplist>
   </category>
+  <category>
+    <id>base-system</id>
+    <name>Base System</name>
+    <description>Various core pieces of the system.</description>
+    <display_order>99</display_order>
+    <grouplist>
+      <groupid>admin-tools</groupid>
+      <groupid>dial-up</groupid>
+      <groupid>fonts</groupid>
+      <groupid>hardware-support</groupid>
+      <groupid>input-methods</groupid>
+      <groupid>java</groupid>
+      <groupid>legacy-fonts</groupid>
+      <groupid>networkmanager-submodules</groupid>
+      <groupid>standard</groupid>
+      <groupid>system-tools</groupid>
+      <groupid>virtualization</groupid>
+    </grouplist>
+  </category>
   <langpacks>
     <match install="LabPlot-doc-%s" name="LabPlot-doc"/>
     <match install="aspell-%s" name="aspell"/>
@@ -6598,5 +6499,4 @@
     <match install="tesseract-langpack-%s" name="tesseract"/>
     <match install="tkgate-%s" name="tkgate"/>
   </langpacks>
-
 </comps>
