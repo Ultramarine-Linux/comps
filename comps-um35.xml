@@ -5791,7 +5791,6 @@
     </grouplist>
     <optionlist>
       <!-- Include literally all of the groups in here -->
-      <groupid>core</groupid>
       <groupid>admin-tools</groupid>
       <groupid>base-x</groupid>
       <groupid>dial-up</groupid>
@@ -5806,6 +5805,7 @@
       <groupid>xfce-media</groupid>
       <groupid>office</groupid>
       <groupid>gnome-desktop</groupid>
+
 
     </optionlist>
   </environment>
