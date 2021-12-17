@@ -465,6 +465,7 @@
       <packagereq type="mandatory">vim-minimal</packagereq>
       <packagereq type="mandatory">yum</packagereq>
       <packagereq type="default">dnf-plugins-core</packagereq>
+      <packagereq type="default">ultramarine-release-common</packagereq>
       <packagereq type="default">dracut-config-rescue</packagereq>
       <packagereq type="default">firewalld</packagereq>
       <packagereq type="default">NetworkManager</packagereq>
