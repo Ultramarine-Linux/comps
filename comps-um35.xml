@@ -4086,6 +4086,19 @@
     </packagelist>
   </group>
   <group>
+    <id>nvidia-driver</id>
+    <name>NVIDIA Graphics Drivers</name>
+    <description>Proprietary drivers for NVIDIA Graphics cards.</description>
+    <default>false</default>
+    <uservisible>true</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">akmod-nvidia</packagereq>
+      <packagereq type="mandatory">kernel-headers</packagereq>
+      <packagereq type="mandatory">kernel-devel</packagereq>
+      <packagereq type="mandatory">xorg-x11-drv-nvidia-cuda</packagereq>
+    </packagelist>
+  </group>
+  <group>
     <id>ocaml</id>
     <name>OCaml</name>
     <description>
