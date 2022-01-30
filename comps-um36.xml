@@ -668,11 +668,11 @@
       <packagereq type="mandatory">cutefish-settings</packagereq>
       <packagereq type="mandatory">cutefish-statusbar</packagereq>
       <packagereq type="mandatory">cutefish-terminal</packagereq>
-      <packagereq type="mandatory">cutefish-videoplayer</packagereq>
+      <packagereq type="optional">cutefish-videoplayer</packagereq>
       <packagereq type="mandatory">kwin</packagereq>
       <packagereq type="mandatory">sddm</packagereq>
       <packagereq type="default">cutefish-gtk-themes</packagereq>
-      <packagereq type="mandatory">ultramarine-backgrounds</packagereq>
+      <packagereq type="default">ultramarine-backgrounds-basic</packagereq>
       <packagereq type="default">cutefish-dock</packagereq>
       <packagereq type="default">kate</packagereq>
       <packagereq type="default">sddm-theme-cutefish</packagereq>
