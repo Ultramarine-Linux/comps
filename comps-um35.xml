@@ -4247,6 +4247,7 @@
       <packagereq type="default">elementary-terminal</packagereq>
       <packagereq type="default">elementary-videos</packagereq>
       <packagereq type="default">switchboard</packagereq>
+      <packagereq type="default">gnome-software</packagereq>
       <packagereq type="default">switchboard-plug-a11y</packagereq>
       <packagereq type="default">switchboard-plug-about</packagereq>
       <packagereq type="default">switchboard-plug-applications</packagereq>
