@@ -672,7 +672,7 @@
       <packagereq type="mandatory">kwin</packagereq>
       <packagereq type="mandatory">sddm</packagereq>
       <packagereq type="default">cutefish-gtk-themes</packagereq>
-      <packagereq type="default">ultramarine-backgrounds-basic</packagereq>
+      <packagereq type="default">ultramarine-backgrounds-common</packagereq>
       <packagereq type="default">cutefish-dock</packagereq>
       <packagereq type="default">kate</packagereq>
       <packagereq type="default">sddm-theme-cutefish</packagereq>
@@ -1486,7 +1486,7 @@
       <packagereq type="default">time</packagereq>
       <packagereq type="default">traceroute</packagereq>
       <packagereq type="default">tree</packagereq>
-      <packagereq type="default">ultramarine-backgrounds-basic</packagereq>
+      <packagereq type="default">ultramarine-backgrounds-common</packagereq>
       <packagereq type="default">ultramarine-release-flagship</packagereq>
       <packagereq type="default">unoconv</packagereq>
       <packagereq type="default">unzip</packagereq>
