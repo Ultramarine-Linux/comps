@@ -661,14 +661,13 @@
     <uservisible>true</uservisible>
     <packagelist>
       <packagereq type="mandatory">abrt</packagereq>
-      <packagereq type="mandatory">cutefish-desktop</packagereq>
+      <packagereq type="mandatory">cutefish-core</packagereq>
       <packagereq type="mandatory">cutefish-filemanager</packagereq>
       <packagereq type="mandatory">cutefish-icons</packagereq>
       <packagereq type="mandatory">cutefish-screenlocker</packagereq>
       <packagereq type="mandatory">cutefish-settings</packagereq>
       <packagereq type="mandatory">cutefish-statusbar</packagereq>
       <packagereq type="mandatory">cutefish-terminal</packagereq>
-      <packagereq type="optional">cutefish-videoplayer</packagereq>
       <packagereq type="mandatory">kwin</packagereq>
       <packagereq type="mandatory">sddm</packagereq>
       <packagereq type="default">cutefish-gtk-themes</packagereq>
@@ -4248,6 +4247,7 @@
       <packagereq type="default">elementary-terminal</packagereq>
       <packagereq type="default">elementary-videos</packagereq>
       <packagereq type="default">switchboard</packagereq>
+      <packagereq type="default">gnome-software</packagereq>
       <packagereq type="default">switchboard-plug-a11y</packagereq>
       <packagereq type="default">switchboard-plug-about</packagereq>
       <packagereq type="default">switchboard-plug-applications</packagereq>
