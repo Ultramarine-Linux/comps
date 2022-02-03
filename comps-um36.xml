@@ -668,9 +668,13 @@
       <packagereq type="mandatory">cutefish-settings</packagereq>
       <packagereq type="mandatory">cutefish-statusbar</packagereq>
       <packagereq type="mandatory">cutefish-terminal</packagereq>
+      <packagereq type="mandatory">cutefish-qt-plugins</packagereq>
+      <packagereq type="mandatory">cutefish-kwin-plugins</packagereq>
+      <packagereq type="mandatory">cutefish-launcher</packagereq>
       <packagereq type="mandatory">kwin</packagereq>
       <packagereq type="mandatory">sddm</packagereq>
       <packagereq type="default">cutefish-gtk-themes</packagereq>
+      <packagereq type="default">cutefish-calculator</packagereq>
       <packagereq type="default">ultramarine-backgrounds-common</packagereq>
       <packagereq type="default">cutefish-dock</packagereq>
       <packagereq type="default">kate</packagereq>
